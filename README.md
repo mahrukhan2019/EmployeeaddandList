@@ -1,3 +1,7 @@
+![mongo](https://user-images.githubusercontent.com/51091300/70369660-ad44be00-1882-11ea-85d5-244796af3ab1.png)
+
+
+
 # Employees
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
