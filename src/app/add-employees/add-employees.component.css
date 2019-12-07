@@ -1,0 +1,36 @@
+*,html{
+    margin: 0;
+}
+.todo-content{
+    margin-top: 50px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    height: 80px;
+}
+input{
+    font-size: 20pt; 
+}
+form{
+
+    font-size: 20pt;
+}
+td{
+    text-align: left;
+}
+.formdiv{
+text-align: center;
+align-content: center;
+}
+.centerButton{
+    width: 80%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;  
+    cursor: pointer;
+    background-color: lightcoral;
+    color: white;
+    font-size: 20pt;
+}

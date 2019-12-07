@@ -1,0 +1,37 @@
+
+<div class="row">
+        <div class="col"><form (ngSubmit)="onSubmit()">
+                <input type="text" placeholder="Search by role..." id="role" name="role" required [(ngModel)]="role">
+                <button class= "submitbuttonstyle" type="submit">Submit</button>
+            </form></div>
+        <div class="col"><form (ngSubmit)="onSubmit2()">
+                <input type="text" placeholder="Search by firstname..." id="firstname" name="firstname" required [(ngModel)]="firstname">
+                <button class= "submitbuttonstyle" type="submit">Submit</button>
+            </form></div>
+        <div class="col"> <form (ngSubmit)="onSubmit3()">
+                <input type="text" placeholder="Search by lastname..." id="lastname" name="lastname" required [(ngModel)]="lastname">
+                <button class= "submitbuttonstyle" type="submit">Submit</button>
+            </form></div>
+        <div class="col"> <button (click)="reset()" class= "submitbuttonstyle2">reset</button>
+        </div>
+      </div>
+
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th><label>First Name: </label></th>
+            <th><label>Last Name: </label></th>
+            <th><label>Role: </label></th>
+            <th>Remove</th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.firstname}}</td>
+            <td>{{employee.lastname}}</td>
+            <td>{{employee.role}}</td>
+            <td><button (click)="remove(employee.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
